@@ -20,5 +20,10 @@
             <button type="submit">投稿</button>
         </form>
     </div>
+    <div>
+        @foreach( $tweets as $tweet)
+            <p>{{ $tweet->content }}</p>
+        @endforeach
+    </div>
 </body>
 </html>
